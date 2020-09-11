@@ -66,12 +66,12 @@ public class WxProperties extends SocialProperties {
 ```java
 package com.lyf.springboot.wx;
 
-import com.lyf.springboot.wx.auto.WxProperties;
-import com.lyf.springboot.wx.req.WeChatAuthResponse;
-import com.lyf.springboot.wx.req.WeChatUserInfo;
+import com.lyf.springboot.wx.auto.WeChatProperties;
+import com.lyf.springboot.wx.data.WeChatAuthResponse;
+import com.lyf.springboot.wx.data.WeChatUserInfo;
 import com.lyf.springboot.wx.utils.HttpClientUtil;
 import com.lyf.springboot.wx.utils.JsonHelper;
-import com.lyf.springboot.wx.utils.WxHelper;
+import com.lyf.springboot.wx.utils.WxConstants;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -151,24 +151,24 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
     {
       "name": "spring.social.wx.app-id",
       "type": "java.lang.String",
-      "sourceType": "com.lyf.springboot.wx.auto.WxProperties"
+      "sourceType": "com.lyf.springboot.wx.auto.WeChatProperties"
     },
     {
       "name": "spring.social.wx.app-secret",
       "type": "java.lang.String",
-      "sourceType": "com.lyf.springboot.wx.auto.WxProperties"
+      "sourceType": "com.lyf.springboot.wx.auto.WeChatProperties"
     },
     {
       "name": "spring.social.wx.app-name",
       "type": "java.lang.String",
-      "sourceType": "com.lyf.springboot.wx.auto.WxProperties"
+      "sourceType": "com.lyf.springboot.wx.auto.WeChatProperties"
     },
     {
       "name": "spring.social.wx.device-type",
       "type": "java.lang.String",
       "description": "wx platform type, 1 for app, 2 for web",
       "defaultValue": 1,
-      "sourceType": "com.lyf.springboot.wx.auto.WxProperties"
+      "sourceType": "com.lyf.springboot.wx.auto.WeChatProperties"
     }
   ],
   "hints": []

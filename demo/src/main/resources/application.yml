@@ -1,7 +1,7 @@
 spring:
   social:
     wx:
-      app-id: # 配置自己申请的appId
-      app-secret: #配置为自己申请的appSecret
-      app-name: #此处是为了区分多个app进行的配置 可选
+      app-id: 1 # 配置自己申请的appId
+      app-secret: 2 #配置为自己申请的appSecret
+      app-name: 3 #此处是为了区分多个app进行的配置 可选
       device-type: 2

@@ -5,7 +5,8 @@
 	<parent>
 		<artifactId>wechat-parent</artifactId>
 		<groupId>com.lyf.springboot.wechat</groupId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
@@ -16,10 +17,16 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!--<dependency>
+			<groupId>com.lyf.springboot.wechat</groupId>
+			<artifactId>starter-httpclient</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
+		</dependency>-->
+
 		<dependency>
 			<groupId>com.lyf.springboot.wechat</groupId>
-			<artifactId>wechat-starter</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<artifactId>starter-feign</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
