@@ -143,7 +143,7 @@ public class WxAutoConfiguration {
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.lyf.springboot.wx.auto.WxAutoConfiguration
 ```
-    
+
 5. 对WxProperties类的属性进行配置，在resources/META-INF/目录下创建spring-configuration-metadata.json文件
 ```javascript
 {
@@ -174,14 +174,24 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   "hints": []
 }
 ```
-### wechat-starter的使用
+### starter的使用
 1. maven中引入wechat-starter
 ```xml
+<!-- 通过openfeign的方式进行请求，可以根据自己的需求，启用okhttp，配置连接池等 -->
 <dependency>
     <groupId>com.lyf.springboot.wechat</groupId>
-    <artifactId>wechat-starter</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>starter-feign</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
 </dependency>
+
+<!-- 通过封装httpclient的方式进行请求 -->
+<!--
+	<dependency>
+    <groupId>com.lyf.springboot.wechat</groupId>
+    <artifactId>starter-httpclient</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
+  </dependency>
+-->
 ```
 2. 在application.yml中配置自己的微信App信息
 ```yml
