@@ -175,7 +175,7 @@ org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 }
 ```
 ### starter的使用
-> == 0.0.2中更新了spring boot为2.3.1，如果需要在自己项目中使用，建议根据自己的springboot版本进行调整==
+> 0.0.2中更新了spring boot为2.3.1，如果需要在自己项目中使用，建议根据自己的springboot版本进行调整
 1. maven中引入starter-feign
 ```xml
 <!-- 通过openfeign的方式进行请求，可以根据自己的需求，启用okhttp，配置连接池等 -->
